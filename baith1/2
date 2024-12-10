@@ -1,0 +1,8 @@
+# The Il Statement inside the loop will print the correct lyric: bottles vs.
+# bottle
+# This version uses a For Loop rather than a while Loop. It will only work in version 1.7 and later.
+for n in range(99, 1 - 1, -1):
+    # if Conditional:
+        print("One bottle of beer on the wall")
+    # else:
+        print(n + "bottles of beer on the wall")
