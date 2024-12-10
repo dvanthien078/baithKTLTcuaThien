@@ -1,0 +1,8 @@
+print('đinh văn thiện msv 2535752021610032')
+n = int(input("Enter a number ---> "))
+
+
+if n % 2 == 0:
+    print("EVEN Number")
+else:
+    print("ODD Number")
