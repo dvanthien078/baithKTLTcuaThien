@@ -1,0 +1,4 @@
+print('đinh văn thiện')
+s=input('nhập chuỗi:')
+for thien in s:
+    print(thien)
