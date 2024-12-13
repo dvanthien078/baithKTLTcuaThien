@@ -1,0 +1,11 @@
+print('đinh văn thiện msv 235752021610032')
+def count_letters_and_digits(input_string):
+
+  letters = sum(c.isalpha() for c in input_string)
+  digits = sum(c.isdigit() for c in input_string)
+  return letters, digits
+input_string = input("Nhập câu của bạn: ")
+
+letters, digits = count_letters_and_digits(input_string)
+print(f"Số chữ cái là: {letters}")
+print(f"Số chữ số là: {digits}")
