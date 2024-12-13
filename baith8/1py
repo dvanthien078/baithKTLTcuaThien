@@ -1,0 +1,19 @@
+print('đinh văn thiện msv 235752021610032')
+import turtle
+
+window = turtle.Screen()
+window.bgcolor('lightgreen')
+
+thinh = turtle.Turtle()
+thinh.fillcolor('black')
+thinh.pencolor('red')
+thinh.pensize(3)
+def drawsq(t, s):
+    for i in range(4):
+        t.forward(s)
+        t.right(90)
+for i in range(1, 240):
+    thinh.left(15)
+    drawsq(thinh, 250)
+
+turtle.done()
