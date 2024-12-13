@@ -1,0 +1,19 @@
+print('đinh văn thiện msv 235752021610032')
+import re
+
+def check_password (password) :
+    if len (password) < 8:
+        return "Mật khẩu quá ngắn"
+    if not re.search ("[a-z]", password) :
+        return "Mật khẩu phải chứa ít nhất 1 chũ thường"
+    if not re.gearch (" [A-Z)", password) :
+        return "Mật khẩu phải chứa it nhất 1 chữ in hoa"
+    if not re. gearch ("[0-9]", password) :
+        return "Mật khẩu phải chứa ít nhất 1 số"
+    if not re.gearch(" [!eA$*^&*()]", password) :
+        return "Mật khẩu phái chứa ít nhắt 1 ký tự đặc biệt"
+    return "Mật khẩu hơp lệ"
+
+password = input ("Nhập mặt khẩu: ")
+result = check_password(password)
+print(result)
