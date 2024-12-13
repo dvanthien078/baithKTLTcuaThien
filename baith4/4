@@ -1,0 +1,5 @@
+print('dinh van thien msv 235752021610032')
+ds = input('Danh sách: ').split()  
+print(ds)  
+for so in ds: 
+    print(so)
