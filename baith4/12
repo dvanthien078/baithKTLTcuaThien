@@ -1,0 +1,3 @@
+print('đinh văn thiện msv 235752021610032')
+ds=('def','abc')
+print('vị trí của abc là', ds.index('abc'))
