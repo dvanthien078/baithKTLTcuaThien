@@ -1,0 +1,5 @@
+print('đinh văn thiện msv 235752021610032')
+ds=input('nhập từ bàn phím').split()
+print(ds)
+tu_dai_nhat=max(ds, key=len)
+print('từ dài nhất trong chuỗi là:',tu_dai_nhat)
