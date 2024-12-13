@@ -1,0 +1,5 @@
+print('đinh văn thiện msv 235752021610032')
+a=('i love you')
+ds=a.split()
+ds.sort()
+print(ds)
