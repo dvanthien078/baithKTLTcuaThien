@@ -1,0 +1,19 @@
+print('đinh văn thiện msv 235752021610032')
+def eratosthenes_sieve(limit):
+  primes = []
+  is_prime = [True] * (limit + 1) 
+  is_prime[0] = is_prime[1] = False 
+
+  for num in range(2, limit + 1):
+    if is_prime[num]:
+      primes.append(num)
+      for multiple in range(num * num, limit + 1, num):
+        is_prime[multiple] = False
+
+  return primes
+
+try:
+  result = eratosthenes_sieve(1000000)
+  print(result)
+except MemoryError:
+  print("Lỗi bộ nhớ: Vui lòng giảm giá trị giới hạn.")
