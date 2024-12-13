@@ -1,0 +1,5 @@
+print('dinh van thien msv 235752021610032')
+ds=['thien']
+ds.append('abc')
+for ch in ds:
+    print(ch)
