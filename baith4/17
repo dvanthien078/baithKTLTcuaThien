@@ -1,0 +1,12 @@
+print('đinh văn thiện msv 235752021610032')
+def tim_uoc_so_nho_hon_n(n):
+
+  cac_uoc_so = []
+  for i in range(1, n):  
+    if n % i == 0:
+      cac_uoc_so.append(i)
+  return cac_uoc_so
+
+n = int(input("Nhập n: "))
+ket_qua = tim_uoc_so_nho_hon_n(n)
+print("Các ước số nhỏ hơn", n, "là:", ket_qua)
