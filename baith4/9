@@ -1,0 +1,2 @@
+print('đinh văn thiện msv 235752021610032')
+ds=input('nhập chuỗi:'). split()
