@@ -1,0 +1,24 @@
+print('đinh văn thiện msv 235752021610032')
+def calculate_balance(transactions):
+
+  balance = 0
+  for transaction in transactions:
+    type, amount = transaction.split()
+    amount = int(amount)
+    if type == 'D':
+      balance += amount
+    elif type == 'W':
+      balance -= amount
+  return balance
+
+transactions = []
+print("Nhập các giao dịch (nhập Enter để kết thúc):")
+while True:
+  transaction = input()
+  if not transaction:
+    break
+  transactions.append(transaction)
+
+balance = calculate_balance(transactions)
+
+print(f"Số tiền thực trong tài khoản: {balance}")
